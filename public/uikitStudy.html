@@ -7,13 +7,36 @@
     <script src="uikit/js/uikit.min.js"></script>
 </head>
 <body>
+    <div style="width: 100px">
+        <ul class="uk-nav">
+            <li class="uk-parent"><a href="">Parent</a>
+                <ul class="uk-nav-sub">
+                    <li><a>Sub item</a></li>
+                    <li><a>Sub item</a></li>
+                    <li><a>Sub item</a></li>
+                    <ul class="uk-nav-sub">
+                        <li><a>Sub item</a></li>
+                        <li><a>Sub item</a></li>
+                        <li><a>Sub item</a></li>
+                    </ul>
+                </ul>
+            </li>
+            <li class="uk-active"><a>Parent2</a></li>
+            <li><a>Parent2</a></li>
+            <li><a>Parent2</a></li>
+        </ul>
+    </div>
     <div class="uk-grid">
         <div class="uk-width-1-2 uk-container-center">grid0</div>
-        <div class="uk-width-1-2">grid1</div>
-        <div class="uk-width-1-2">grid1</div>
-        <div class="uk-width-1-2">grid1</div>
-        <div class="uk-width-1-2">grid1</div>
-        <div class="uk-width-1-2"><button class="uk-button uk-container-center" type="button">My </button></div>
+        <div class="uk-width-1-2 uk-vertical-align-middle">grid1</div>
+        <div class="uk-width-1-2">
+            <div class="uk-panel uk-panel-box uk-text-center">
+                <a>Something</a>
+            </div>
+        </div>
+        <div class="uk-width-1-2 uk-text-center">grid1</div>
+        <div class="uk-width-1-2 uk-text-center">grid1</div>
+        <div class="uk-width-1-2"><button class="uk-button uk-button-primary" type="button">My </button></div>
     </div>
 </body>
 </html>
