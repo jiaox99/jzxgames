@@ -1,58 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html class="uk-height-1-1">
 <head>
     <title>UiKit Study</title>
     <link href="uikit/css/uikit.css" rel="stylesheet" />
     <script src="js/jquery-1.9.0.min.js"></script>
     <script src="uikit/js/uikit.min.js"></script>
 </head>
-<body>
-    <nav class="uk-navbar">
-        <ul class="uk-navbar-nav">
-            <li class="uk-active"><a>Item1</a></li>
-            <li><a>Item2</a></li>
-            <li><a>Item3</a></li>
-            <li class="uk-parent" data-uk-dropdown="{mode:'click'}" >
-                <a>Item4</a>
-                <div class="uk-dropdown uk-dropdown-navbar">
-                    <ul class="uk-nav uk-nav-navbar">
-                        <li><a>Item2</a></li>
-                        <li><a>Item3</a></li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </nav>
-    <div style="width: 100px">
-        <ul class="uk-nav">
-            <li class="uk-parent"><a href="">Parent</a>
-                <ul class="uk-nav-sub">
-                    <li><a>Sub item</a></li>
-                    <li><a>Sub item</a></li>
-                    <li><a>Sub item</a></li>
+<body class="uk-height-1-1">
+    <div class="uk-vertical-align uk-text-center">
+        <nav class="uk-navbar">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a>Item1</a></li>
+                <li><a>Item2</a></li>
+                <li><a>Item3</a></li>
+                <li class="uk-parent" data-uk-dropdown="{mode:'click'}" >
+                    <a>Item4</a>
+                    <div class="uk-dropdown uk-dropdown-navbar">
+                        <ul class="uk-nav uk-nav-navbar">
+                            <li><a>Item2</a></li>
+                            <li><a>Item3</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div style="width: 100px">
+            <ul class="uk-nav">
+                <li class="uk-parent"><a href="">Parent</a>
                     <ul class="uk-nav-sub">
                         <li><a>Sub item</a></li>
                         <li><a>Sub item</a></li>
                         <li><a>Sub item</a></li>
+                        <ul class="uk-nav-sub">
+                            <li><a>Sub item</a></li>
+                            <li><a>Sub item</a></li>
+                            <li><a>Sub item</a></li>
+                        </ul>
                     </ul>
-                </ul>
-            </li>
-            <li class="uk-active"><a>Parent2</a></li>
-            <li><a>Parent2</a></li>
-            <li><a>Parent2</a></li>
-        </ul>
-    </div>
-    <div class="uk-grid">
-        <div class="uk-width-1-2 uk-container-center">grid0</div>
-        <div class="uk-width-1-2 uk-vertical-align-middle">grid1</div>
-        <div class="uk-width-1-2">
-            <div class="uk-panel uk-panel-box uk-text-center">
-                <a>Something</a>
-            </div>
+                </li>
+                <li class="uk-active"><a>Parent2</a></li>
+                <li><a>Parent2</a></li>
+                <li><a>Parent2</a></li>
+            </ul>
         </div>
-        <div class="uk-width-1-2 uk-text-center">grid1</div>
-        <div class="uk-width-1-2 uk-text-center">grid1</div>
-        <div class="uk-width-1-2"><button class="uk-button uk-button-primary" type="button">My </button></div>
+        <div class="uk-grid">
+            <div class="uk-width-1-2 uk-container-center">grid0</div>
+            <div class="uk-width-1-2 uk-vertical-align-middle">grid1</div>
+            <div class="uk-width-1-2">
+                <div class="uk-panel uk-panel-box uk-text-center">
+                    <a>Something</a>
+                </div>
+            </div>
+            <div class="uk-width-1-2 uk-text-center">grid1</div>
+            <div class="uk-width-1-2 uk-text-center">grid1</div>
+            <div class="uk-width-1-2"><button class="uk-button uk-button-primary" type="button">My </button></div>
+        </div>
     </div>
 </body>
 </html>
