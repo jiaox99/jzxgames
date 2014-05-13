@@ -7,6 +7,22 @@
     <script src="uikit/js/uikit.min.js"></script>
 </head>
 <body>
+    <nav class="uk-navbar">
+        <ul class="uk-navbar-nav">
+            <li class="uk-active"><a>Item1</a></li>
+            <li><a>Item2</a></li>
+            <li><a>Item3</a></li>
+            <li class="uk-parent" data-uk-dropdown="{mode:'click'}" >
+                <a>Item4</a>
+                <div class="uk-dropdown uk-dropdown-navbar">
+                    <ul class="uk-nav uk-nav-navbar">
+                        <li><a>Item2</a></li>
+                        <li><a>Item3</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
     <div style="width: 100px">
         <ul class="uk-nav">
             <li class="uk-parent"><a href="">Parent</a>
