@@ -6,10 +6,10 @@ var g_resources = [
     //image
     {src:s_HelloWorld},
     {src:s_CloseNormal},
-    {src:s_CloseSelected}
-
+    {src:s_CloseSelected},
+    {src:"tauren0.png"},
     //plist
-
+    {src:"tauren0.plist"}
     //fnt
 
     //tmx

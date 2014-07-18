@@ -73,6 +73,14 @@ var MyLayer = cc.Layer.extend({
         this.sprite.setPosition(size.width / 2, size.height / 2);
         this.sprite.setScale(size.height/this.sprite.getContentSize().height);
         this.addChild(this.sprite, 0);
+
+        ccs.ArmatureDataManager.getInstance().addArmatureFileInfo(
+            "tauren0.png", "tauren0.plist", "tauren.ExportJson" );
+        var armature = ccs.Armature.create( "tauren" );
+        armature.getAnimation().playByIndex( 0 );
+        armature.setScale( 0.5 );
+        armature.setPosition( 200, 300 );
+        this.addChild( armature, 2 );
     }
 });
 
