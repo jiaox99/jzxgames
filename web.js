@@ -22,7 +22,7 @@ app.get( '/omni',
 app.get( '/omniLogin', 
 	function( req, res )
 	{
-		res.send( req.code );
+		res.send( req.query.code );
 	}
 );
 
