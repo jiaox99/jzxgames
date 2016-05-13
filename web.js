@@ -22,7 +22,7 @@ app.get( '/omni',
 const https = require( 'https' );
 
 var options = {
-	host : "https://account.teambition.com/oauth2/authorize",
+	host : "https://account.teambition.com/oauth2/access_token",
 	method : "POST",
 	client_id:"132a6150-0ae2-11e6-bfaa-a3d82dc1ed48",
 	client_secret:"09b48944-ec96-4f07-ae16-e88352fdc0bd",
