@@ -35,8 +35,9 @@ app.get( '/omniLogin',
 		aData = JSON.stringify( aData );
 
 		var options = {
-			host : "https://account.teambition.com/oauth2/access_token",
+			host : "account.teambition.com",
 			method : "POST",
+			path:'/oauth2/access_token',
 			headers : {
 				"Content-Type" : 'application/json',
 				"Content-Length" : aData.length
